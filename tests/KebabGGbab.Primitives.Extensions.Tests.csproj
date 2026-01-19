@@ -1,7 +1,7 @@
 <Project Sdk="MSTest.Sdk/3.9.2">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,10 +9,8 @@
     <TestingExtensionsProfile>None</TestingExtensionsProfile>
   </PropertyGroup>
 
-	<ItemGroup>
-	  <Reference Include="KebabGGbab.Primitives.Extensions">
-	    <HintPath>..\src\bin\Debug\net9.0\KebabGGbab.Primitives.Extensions.dll</HintPath>
-	  </Reference>
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\KebabGGbab.Primitives.Extensions.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -14,5 +14,17 @@
 
 			Assert.AreEqual(str, valueStream);
 		}
+
+		[TestMethod]
+		public void Replace_ReplaceArrayCharWithNewChar_StringWithoutOldChar()
+		{
+			string str = "Hellow world!";
+			char[] oldChars = ['l', ' ', '!'];
+			char newChar = '1';
+
+			str = str.Replace(oldChars, newChar);
+
+			Assert.AreEqual("He11ow1wor1d1", str);
+		}
 	}
 }
